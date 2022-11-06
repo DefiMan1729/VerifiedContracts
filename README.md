@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+# Sample Hardhat Project: Verified Smart Contract (NFT/ERC721)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates the simple process of verifying a Smart Contract on Etherscan
 
-Try running some of the following tasks:
-
+Step 1:
+Deploy the smart contract 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy.js --network <network name>
 ```
+
+Step2:
+verify the smart contract on Etherscan
+```shell
+npx hardhat verify -- network <network name> <contract address>
+```
+
